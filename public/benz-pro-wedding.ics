@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Benz and Pro//Wedding Invitation//TH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:benz-pro-20270130@wedding.local
+DTSTAMP:20260921T000000Z
+DTSTART:20270130T013000Z
+SUMMARY:งานแต่งงาน เบนซ์ & โปร
+LOCATION:เฮือนคำหลวง อำเภอเมือง
+ ลำปาง จังหวัดลำปาง 52000
+DESCRIPTION:ร่วมงานมงคลสมรส นางสา
+ วสุชานันท์ เนียรวิชัย และ 
+ นายญาณกิตติ์ พรมปัญญา\nธีม
+ สี แดง ครีม น้ำตาล (ล้านนา)\nh
+ ttps://maps.app.goo.gl/36pKmcde9dYpLxaU7
+URL:https://maps.app.goo.gl/36pKmcde9dYpLxaU7
+END:VEVENT
+END:VCALENDAR

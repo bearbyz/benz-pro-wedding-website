@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# เบนซ์ & โปร — การ์ดเชิญงานแต่งงาน
 
-## Getting Started
+เว็บไซต์ภาษาไทย Next.js + Tailwind CSS แบบ Front-End เท่านั้น ไม่มีฐานข้อมูล ไม่มี API และไม่มี RSVP
 
-First, run the development server:
+## เริ่มใช้งาน
 
-```bash
+ใช้ Node.js 22.18 ขึ้นไป (พัฒนาและทดสอบด้วย Node.js 24) เพื่อสร้างไฟล์ปฏิทินจากข้อมูล TypeScript ได้โดยตรง
+
+```powershell
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+เปิด http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```powershell
+npm run lint
+npm test
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ตั้งค่า `output: "export"` แล้ว `npm run build` จะสร้างเว็บสแตติกใน `out/` นำโฟลเดอร์นี้ไปวางบนโฮสติ้งที่รองรับ HTML/CSS/JavaScript ได้โดยไม่ต้องรัน Next.js server
 
-## Learn More
+`npm start` ใช้สำหรับ preview ไฟล์ใน `out/` หลัง build
 
-To learn more about Next.js, take a look at the following resources:
+## สิ่งที่มี
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ซองเบอร์กานดี้ ลูกไม้ ดอกไม้ และลายเส้นล้านนา พร้อมแอนิเมชันเปิดฝาซอง ดึงการ์ด หมุนและขยายเข้าสู่คำเชิญ
+- ปุ่มอ่านคำเชิญเพื่อข้ามแอนิเมชัน, รองรับ prefers-reduced-motion, คีย์บอร์ด, focus management และกลับมาเปิดซองใหม่ได้
+- ชื่อคู่บ่าวสาวและครอบครัวตามข้อมูลที่ยืนยัน, นับถอยหลังเวลาไทย, กำหนดการ, ธีมสีแต่งกาย
+- ลิงก์ Google Maps ไปยัง 8G3C+XPF, Mueang Lampang District, Lampang 52000
+- ดาวน์โหลดไฟล์ .ics สำหรับเพิ่มวันงานลงปฏิทิน (08.30 น. เขตเวลาไทย โดยไม่สมมติเวลาเลิกงาน)
+- รองรับมือถือและเดสก์ท็อป, ฟอนต์ Charmonman / Sarabun / Cormorant Garamond
+- ฟอนต์ถูกดาวน์โหลดและ self-host โดย next/font ในขั้นตอน build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## เปลี่ยนข้อมูล รูป และวิดีโอ
 
-## Deploy on Vercel
+ข้อมูลหลักรวมอยู่ใน `src/data/wedding.ts` ไฟล์เดียว
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+สำหรับภาพ ให้ใส่ไฟล์ใน `public/images` แล้วตั้งค่า:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```ts
+media: {
+  type: "image",
+  src: "/images/couple.jpg",
+  alt: "ภาพพรีเวดดิ้งของเบนซ์และโปร",
+}
+```
+
+สำหรับวิดีโอ ให้ใส่ไฟล์ใน `public/videos` แล้วตั้งค่า:
+
+```ts
+media: {
+  type: "video",
+  src: "/videos/our-story.mp4",
+  poster: "/images/video-cover.jpg",
+  alt: "วิดีโอของเบนซ์และโปร",
+}
+```
+
+วิดีโอมี controls และ playsInline ไม่เล่นเอง เพื่อให้ผู้ชมควบคุมได้ และจะหยุดเพลงพื้นหลังเมื่อกดเล่นวิดีโอ ภาพปัจจุบันเป็นภาพประกอบ Placeholder ที่สร้างขึ้น ไม่ใช่ภาพสถานที่จัดงานจริง
+
+## เพลง
+
+เลือกตัวเลือก `scoore romantic1` โดย Chomnai_TH จาก Pixabay ไว้แล้ว แต่ยังไม่สามารถรับ/ตรวจฟังไฟล์ MP3 ในสภาพแวดล้อมนี้ จึงยังไม่ใส่เสียงจริงและซ่อนปุ่มเล่นไว้ ตั้งค่า `music.src` เมื่อมีไฟล์แล้ว ระบบเสียงจะทำงานทันที
+
+ดูรายละเอียดและขั้นตอนที่ `docs/music.md`
+
+## ไฟล์สำคัญ
+
+- `src/components/wedding-invitation.tsx` — พฤติกรรมเปิดซอง, การ์ด, สื่อ, เพลง, ปฏิทิน
+- `src/components/ornaments.tsx` — ลายดอกไม้และไอคอน SVG
+- `src/app/globals.css` — สี เลย์เอาต์ แอนิเมชัน และ responsive
+- `src/data/wedding.ts` — เนื้อหาที่แก้ไขได้
+- `docs/asset-generation.md` — Prompt และที่มาของภาพที่สร้างด้วย image_gen
+- `docs/source-assets/` — ภาพ PNG ต้นฉบับ
+- `public/images/` — ภาพ WebP ที่ใช้ในเว็บ
+
+ยังไม่ได้เผยแพร่ขึ้นโฮสติ้ง และตั้ง robots noindex ไว้สำหรับช่วงออกแบบ เปลี่ยนได้ใน `src/app/layout.tsx` เมื่อต้องการให้ค้นเจอในเสิร์ชเอนจิน
