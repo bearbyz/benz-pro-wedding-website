@@ -87,3 +87,18 @@ media: {
 - ภาพบุคคลสมมติที่เคยใช้ถูกลบออกจากโปรเจกต์แล้ว รูปอ้างอิงที่ผู้ใช้ใส่มายังคงเดิม
 - Prompt และแหล่งอ้างอิงสถานที่อยู่ใน `docs/prewedding-generation.md` (built-in image_gen)
 - CSS เพิ่มเติมอยู่ที่ `src/app/enhancements.css`: การ์ดเอียงตามเมาส์, reveal, วงวันที่, กลีบดอกไม้, hover และแถบความคืบหน้าการอ่าน พร้อม reduced-motion
+
+## GitHub Pages
+
+Workflow `.github/workflows/nextjs.yml` ใช้ Node.js 24 และ `npm run build` เพื่อให้สร้างปฏิทินก่อน build ด้วย ไม่ใช้การ inject config ของ `configure-pages` เพราะโปรเจกต์นี้ใช้ ESM และ `next.config.ts`
+
+`NEXT_PUBLIC_BASE_PATH` รับจาก `actions/configure-pages` และใช้ร่วมกับ `next.config.ts` / `src/lib/asset-path.ts` สำหรับรูป สื่อ และไฟล์ดาวน์โหลด Next Link และ router จัดการ prefix ของหน้าต่าง ๆ เอง ส่วน `trailingSlash` ทำให้เปิด URL ย่อยบน static hosting ได้โดยตรง
+
+หลัง build จะตรวจ URL ของหน้าและ asset ใน HTML ทุกไฟล์ด้วย `scripts/check-static-export.mjs` เพื่อตรวจ path ผิดและไฟล์ที่หาย
+
+ทดสอบแบบ GitHub Pages ใน PowerShell:
+```powershell
+$env:NEXT_PUBLIC_BASE_PATH = '/benz-pro-wedding-website'
+npm run build
+Remove-Item Env:NEXT_PUBLIC_BASE_PATH
+```

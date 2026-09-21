@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+import Image from "./site-image";
+import { assetPath } from "@/lib/asset-path";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import GalleryPreview from "./gallery-preview";
@@ -57,12 +58,12 @@ function WeddingMedia({ onVideoPlay }: { onVideoPlay: () => void }) {
         controls
         playsInline
         preload="metadata"
-        poster={media.poster}
+        poster={assetPath(media.poster)}
         onPlay={onVideoPlay}
         aria-label={media.alt}
       >
-        <source src={media.src} />
-        เบราว์เซอร์นี้ไม่รองรับวิดีโอ <a href={media.src}>เปิดวิดีโอ</a>
+        <source src={assetPath(media.src)} />
+        เบราว์เซอร์นี้ไม่รองรับวิดีโอ <a href={assetPath(media.src)}>เปิดวิดีโอ</a>
       </video>
     );
   }
@@ -159,7 +160,7 @@ export default function WeddingInvitation({ initialStage = "closed" }: { initial
       {wedding.music.src && (
         <audio
           ref={audioRef}
-          src={wedding.music.src}
+          src={assetPath(wedding.music.src)}
           loop
           preload="none"
           onPlay={() => setPlaying(true)}
@@ -410,7 +411,7 @@ export default function WeddingInvitation({ initialStage = "closed" }: { initial
           </ol>
           <a
             className="outline-button"
-            href="/benz-pro-wedding.ics"
+            href={assetPath("/benz-pro-wedding.ics")}
             download="benz-pro-wedding.ics"
           >
             <Icon name="calendar" /> บันทึกวันสำคัญลงปฏิทิน

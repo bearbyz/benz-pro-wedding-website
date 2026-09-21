@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+import Image from "./site-image";
+import { assetPath } from "@/lib/asset-path";
 import Link from "next/link";
 import { wedding } from "@/data/wedding";
 import { galleryPhotos } from "@/data/gallery";
@@ -22,7 +23,7 @@ export default function InvitationSuite() {
 
       <div className="suite-frame" data-reveal><TiltCard><Link href="/gallery" className="heirloom-photo" aria-label="ชมแกลเลอรีภาพของเรา"><Image className="framed-portrait" src={galleryPhotos[0].src} alt={galleryPhotos[0].alt} width={1024} height={1536} sizes="(max-width: 700px) 48vw, 300px"/><Image className="heirloom-frame-image" src="/images/heirloom-frame.webp" alt="" width={1024} height={1536} sizes="(max-width: 700px) 55vw, 365px"/><span className="frame-photo-hint">ภาพของเรา <Icon name="arrow"/></span></Link></TiltCard></div>
 
-      <div className="suite-calendar" data-reveal><TiltCard><div className="calendar-paper"><span className="calendar-kicker">SAVE OUR DATE</span><h2>มกราคม <span>๒๕๗๐</span></h2><div className="mini-calendar" aria-label="ปฏิทินมกราคม 2570 วันงานวันเสาร์ที่ 30"><div className="calendar-weekdays">{["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"].map(day=><span key={day}>{day}</span>)}</div><div className="calendar-days">{Array.from({length:5},(_,i)=><span key={`blank-${i}`}/>)}{Array.from({length:31},(_,i)=><span key={i} className={i===29 ? "our-date" : ""}>{i+1}{i===29&&<svg viewBox="0 0 45 45" aria-hidden="true"><path d="M34 5C10-2-2 13 6 32c8 18 38 7 35-13C40 8 31 2 20 4"/></svg>}</span>)}</div></div><div className="calendar-ribbon" aria-hidden="true"/><span className="wax-seal" aria-hidden="true">B<i>&</i>P</span><div className="calendar-venue"><p>วันเสาร์ · 08.30 น.</p><strong>{wedding.venue}</strong><span>จังหวัดลำปาง</span></div><a className="calendar-download" href="/benz-pro-wedding.ics" download>บันทึกวันของเรา <Icon name="calendar"/></a></div></TiltCard></div>
+      <div className="suite-calendar" data-reveal><TiltCard><div className="calendar-paper"><span className="calendar-kicker">SAVE OUR DATE</span><h2>มกราคม <span>๒๕๗๐</span></h2><div className="mini-calendar" aria-label="ปฏิทินมกราคม 2570 วันงานวันเสาร์ที่ 30"><div className="calendar-weekdays">{["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"].map(day=><span key={day}>{day}</span>)}</div><div className="calendar-days">{Array.from({length:5},(_,i)=><span key={`blank-${i}`}/>)}{Array.from({length:31},(_,i)=><span key={i} className={i===29 ? "our-date" : ""}>{i+1}{i===29&&<svg viewBox="0 0 45 45" aria-hidden="true"><path d="M34 5C10-2-2 13 6 32c8 18 38 7 35-13C40 8 31 2 20 4"/></svg>}</span>)}</div></div><div className="calendar-ribbon" aria-hidden="true"/><span className="wax-seal" aria-hidden="true">B<i>&</i>P</span><div className="calendar-venue"><p>วันเสาร์ · 08.30 น.</p><strong>{wedding.venue}</strong><span>จังหวัดลำปาง</span></div><a className="calendar-download" href={assetPath("/benz-pro-wedding.ics")} download>บันทึกวันของเรา <Icon name="calendar"/></a></div></TiltCard></div>
 
       <div className="suite-ribbon" aria-hidden="true"><svg viewBox="0 0 650 500" fill="none"><path d="M530 5C585 115 235 59 237 174c2 82 220-3 210 117C434 404 129 260 98 432"/></svg></div>
 

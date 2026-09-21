@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "./site-image";
 import Link from "next/link";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { galleryPhotos, type GalleryPhoto } from "@/data/gallery";

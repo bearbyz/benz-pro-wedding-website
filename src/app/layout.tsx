@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
+import { assetPath } from "@/lib/asset-path";
 import { Charmonman, Sarabun, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import "./enhancements.css";
@@ -42,7 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="th"
       className={`${bodyFont.variable} ${thaiScript.variable} ${serifFont.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body style={{ "--envelope-texture": `url("${assetPath("/images/envelope.webp")}")` } as CSSProperties}>{children}</body>
     </html>
   );
 }

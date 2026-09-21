@@ -11,6 +11,7 @@
     "dev": "next dev",
     "prebuild": "node scripts/generate-calendar.mjs",
     "build": "next build",
+    "postbuild": "node scripts/check-static-export.mjs",
     "start": "serve out",
     "lint": "eslint",
     "test": "node --test scripts/calendar.test.mjs"
