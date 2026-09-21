@@ -1242,10 +1242,8 @@ button {
     justify-content: center;
   }
   .intro-top {
-    position: absolute;
-    top: 35px;
-    left: 28px;
-    width: calc(100% - 56px);
+    position: relative;
+    width: 100%;
   }
   .intro-heading {
     margin-top: 20px;
@@ -1350,10 +1348,8 @@ button {
   }
   .intro-top {
     padding: 8px 16px;
-    position: absolute;
-    top: 18px;
-    left: 12px;
-    width: calc(100% - 24px);
+    position: relative;
+    width: 100%;
   }
   .intro-top .brand {
     font-size: 31px;
@@ -1373,7 +1369,7 @@ button {
     letter-spacing: 1px;
   }
   .intro-heading {
-    margin-top: 58px;
+    margin-top: 32px;
   }
   .intro-kicker {
     font-size: 11px;
