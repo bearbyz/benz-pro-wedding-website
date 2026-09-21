@@ -1,6 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import GalleryPreview from "./gallery-preview";
+import { ScrollProgress } from "./motion-details";
 import { useEffect, useRef, useState } from "react";
 import { wedding } from "@/data/wedding";
 import { Botanical, Flourish, Icon } from "./ornaments";
@@ -74,8 +78,9 @@ function WeddingMedia({ onVideoPlay }: { onVideoPlay: () => void }) {
   );
 }
 
-export default function WeddingInvitation() {
-  const [stage, setStage] = useState<Stage>("closed");
+export default function WeddingInvitation({ initialStage = "closed" }: { initialStage?: "closed" | "open" }) {
+  const router = useRouter();
+  const [stage, setStage] = useState<Stage>(initialStage);
   const [playing, setPlaying] = useState(false);
   const [audioError, setAudioError] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -129,14 +134,15 @@ export default function WeddingInvitation() {
       "(prefers-reduced-motion: reduce)",
     ).matches;
     if (skipAnimation || reduceMotion) {
-      setStage("open");
+      router.push("/suite");
       return;
     }
     setStage("opening");
-    timeoutRef.current = setTimeout(() => setStage("open"), 3400);
+    timeoutRef.current = setTimeout(() => router.push("/suite"), 3400);
   }
 
   function closeLetter() {
+    if (initialStage === "open") { router.push("/"); return; }
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     audioRef.current?.pause();
     openGuard.current = false;
@@ -149,6 +155,7 @@ export default function WeddingInvitation() {
 
   return (
     <div className={`wedding-site stage-${stage}`}>
+      {stage === "open" && <ScrollProgress />}
       {wedding.music.src && (
         <audio
           ref={audioRef}
@@ -256,7 +263,7 @@ export default function WeddingInvitation() {
             onClick={() => {
               if (stage === "opening") {
                 if (timeoutRef.current) clearTimeout(timeoutRef.current);
-                setStage("open");
+                router.push("/suite");
               } else openLetter(true);
             }}
           >
@@ -280,6 +287,7 @@ export default function WeddingInvitation() {
             B<span>&</span>P
           </button>
           <div className="nav-links">
+            <Link href="/suite">ชุดการ์ด</Link>
             <a href="#our-day">วันของเรา</a>
             <a href="#schedule">กำหนดการ</a>
             <a href="#location">สถานที่</a>
@@ -484,6 +492,7 @@ export default function WeddingInvitation() {
           </div>
         </section>
 
+        <GalleryPreview />
         <footer className="wedding-footer">
           <Botanical className="footer-botanical" />
           <Icon className="footer-heart" name="heart" />

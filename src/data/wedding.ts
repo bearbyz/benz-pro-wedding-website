@@ -22,8 +22,8 @@ export const wedding = {
   mapsUrl: "https://maps.app.goo.gl/36pKmcde9dYpLxaU7",
   media: {
     type: "image",
-    src: "/images/wedding-placeholder.webp",
-    alt: "ภาพประกอบชั่วคราว: ช่อดอกไม้สีครีม ริบบิ้นเบอร์กานดี้ และแหวนแต่งงานบนเรือนไม้ล้านนา",
+    src: "/images/gallery/benz-pro-portrait.webp",
+    alt: "ภาพพรีเวดดิ้งเบนซ์และโปรในชุดล้านนา สร้างจากภาพอ้างอิงของคู่บ่าวสาว",
   } as WeddingMedia,
   music: {
     // Add the downloaded/licensed file to public/audio, then set its URL here.

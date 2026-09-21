@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Charmonman, Sarabun, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import "./enhancements.css";
 
 const bodyFont = Sarabun({
   variable: "--font-body",

@@ -1,6 +1,6 @@
 # Generated visual assets
 
-Created using the built-in image_gen tool for this project. These are original decorative / placeholder illustrations, not photos of the couple or their real venue.
+Created using the built-in image_gen tool for this project. Decorative stationery assets are original generated illustrations. For the current real-couple prewedding series, see prewedding-generation.md.
 
 ## Envelope
 
@@ -12,11 +12,11 @@ Created using the built-in image_gen tool for this project. These are original d
 
 Use case: product-mockup. Asset type: photorealistic transparent PNG for an interactive Thai Lanna wedding invitation website. Create a luxurious CLOSED horizontal envelope seen perfectly straight down, completely flat and axis-aligned, no perspective rotation. Composition on a 1536x1024 transparent canvas: envelope rectangular outer body bounds precisely from x=20% to x=80% and y=24% to y=80%. Envelope is deep burgundy handmade fine-grain paper (#651c2b), subtle velvety fibers. Its large triangular top flap hinges along the envelope top edge (20%,24%) to (80%,24%) and points down to (50%,65%). Delicate detailed antique ivory embroidered lace runs along the two diagonal flap edges. Small blank burgundy wax seal centered around (50%,54%), no monogram or text. Elegant subtle Thai Lanna floral linework embossed in aged gold on the paper corners. Behind the left and right edges are restrained lifelike small bouquets of deep wine-red roses, ivory garden roses, tiny white jasmine flowers and dusty dark green leaves. A short ivory lace ribbon and a few burgundy petals below. Soft natural light from top left, realistic tactile paper and embroidery, subtle soft ambient shadows. Premium old-world editorial wedding stationery styling, romantic, heirloom, refined. Entire arrangement within frame, ample transparent margin all sides. Actual transparent background, not a checkerboard. Absolutely no text, lettering, numbers, watermarks, or people.
 
-## Wedding still life placeholder
+## Retired wedding still life placeholder (removed)
 
 - Web asset: `public/images/wedding-placeholder.webp`
 - Original PNG: `docs/source-assets/wedding-placeholder.png`
-- This image can be replaced by a photo or video via `src/data/wedding.ts`.
+- Removed from the project and replaced by the real-couple AI portrait on 22 September 2026. Prompt retained as historical documentation.
 
 ### Final prompt
 
