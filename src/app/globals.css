@@ -1436,26 +1436,37 @@ button {
   }
   .emerging-letter {
     padding: 7px;
+    height: 52%;
+    container-type: inline-size;
   }
   .letter-inner {
-    padding: 6px;
-    gap: 2px;
+    padding: 4cqw;
+    gap: 1cqw;
+  }
+  .letter-inner > * {
+    flex-shrink: 0;
+    white-space: nowrap;
   }
   .letter-kicker {
-    font-size: 7px;
+    font-size: 4cqw;
+    line-height: 1.6;
+    letter-spacing: 0.3cqw;
   }
   .letter-names {
-    font-size: 25px;
+    font-size: 14cqw;
+    line-height: 2.25;
   }
   .letter-date {
-    font-size: 8px;
+    font-size: 4.8cqw;
+    line-height: 1.7;
   }
   .letter-venue {
-    font-size: 7px;
+    font-size: 4cqw;
+    line-height: 1.6;
   }
   .letter-inner > svg {
-    width: 70px;
-    height: 12px;
+    width: 36cqw;
+    height: 5cqw;
   }
   .wedding-nav {
     width: calc(100% - 36px);
