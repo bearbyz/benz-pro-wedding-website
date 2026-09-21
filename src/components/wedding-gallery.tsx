@@ -7,7 +7,7 @@ import { galleryPhotos, type GalleryPhoto } from "@/data/gallery";
 import { Botanical, Flourish, Icon } from "./ornaments";
 import { ScrollProgress } from "./motion-details";
 
-const filters = ["ทั้งหมด", "ล้านนา", "โรแมนติก", "คลาสสิก"] as const;
+const filters = ["ทั้งหมด", "ล้านนา", "โรแมนติก", "คลาสสิก", "ชุดขาว & สูท"] as const;
 
 export default function WeddingGallery() {
   const [filter,setFilter] = useState<string>("ทั้งหมด");
