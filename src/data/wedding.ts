@@ -1,0 +1,33 @@
+export type WeddingMedia =
+  | { type: "image"; src: string; alt: string }
+  | { type: "video"; src: string; poster: string; alt: string };
+
+// Edit wedding details and replace the image/video here; no database is needed.
+export const wedding = {
+  bride: { name: "นางสาวสุชานันท์ เนียรวิชัย", nickname: "เบนซ์", parents: ["นายคมสันต์ เนียรวิชัย", "นางนิศารัตน์ ชาร์แมน"] },
+  groom: { name: "นายญาณกิตติ์ พรมปัญญา", nickname: "โปร", parents: ["นายมิตร ตันตน", "นางญาดา พรมปัญญา"] },
+  dateISO: "2027-01-30T08:30:00+07:00",
+  dateLabel: "วันเสาร์ที่ 30 มกราคม 2570",
+  venue: "เฮือนคำหลวง",
+  address: "อำเภอเมืองลำปาง จังหวัดลำปาง 52000",
+  plusCode: "8G3C+XPF",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=8G3C%2BXPF%2C%20Mueang%20Lampang%20District%2C%20Lampang%2052000",
+  media: {
+    type: "image",
+    src: "/images/wedding-placeholder.webp",
+    alt: "ภาพประกอบชั่วคราว: ช่อดอกไม้สีครีม ริบบิ้นเบอร์กานดี้ และแหวนแต่งงานบนเรือนไม้ล้านนา",
+  } as WeddingMedia,
+  music: {
+    src: "/audio/scoore-romantic1.mp3",
+    title: "scoore romantic1",
+    artist: "Chomnai_TH",
+    creditUrl: "https://pixabay.com/music/modern-classical-scoore-romantic1-356101/",
+  },
+  schedule: [
+    { time: "08.30", title: "ต้อนรับแขกผู้มีเกียรติ", description: "พบกันในเช้าวันแห่งความสุข", icon: "welcome" },
+    { time: "09.09", title: "พิธีแห่ขันหมาก", description: "ร่วมขบวนแห่งความยินดี", icon: "procession" },
+    { time: "09.29", title: "พิธีสวมแหวน", description: "คำมั่นสัญญาของสองเรา", icon: "rings" },
+    { time: "10.09", title: "พิธีผูกข้อมือ", description: "รับพรและความปรารถนาดี", icon: "blessing" },
+    { time: "11.30", title: "รับประทานอาหาร", description: "ร่วมอิ่มอร่อยและฉลองด้วยกัน", icon: "dining" },
+  ],
+} as const;
