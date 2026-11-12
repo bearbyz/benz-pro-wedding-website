@@ -3,33 +3,6 @@ export type GalleryPhoto = { id: string; src: string; alt: string; title: string
 // Photographs supplied by the couple in BP_PreWed.
 export const galleryPhotos: GalleryPhoto[] = [
   {
-    "id": "lanna-10",
-    "src": "/images/gallery/prewed-lanna-10.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 10",
-    "title": "Lanna Suit · 10",
-    "collection": "Lanna Suit",
-    "width": 1200,
-    "height": 1800
-  },
-  {
-    "id": "white-22",
-    "src": "/images/gallery/prewed-white-22.webp",
-    "alt": "เบนซ์และโปร — Wedding Suit ภาพที่ 22",
-    "title": "Wedding Suit · 22",
-    "collection": "Wedding Suit",
-    "width": 1200,
-    "height": 1800
-  },
-  {
-    "id": "lanna-15",
-    "src": "/images/gallery/prewed-lanna-15.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 15",
-    "title": "Lanna Suit · 15",
-    "collection": "Lanna Suit",
-    "width": 1200,
-    "height": 1800
-  },
-  {
     "id": "lanna-01",
     "src": "/images/gallery/prewed-lanna-01.webp",
     "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 1",
@@ -50,8 +23,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-04",
     "src": "/images/gallery/prewed-lanna-04.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 4",
-    "title": "Lanna Suit · 04",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 3",
+    "title": "Lanna Suit · 03",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -59,8 +32,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-05",
     "src": "/images/gallery/prewed-lanna-05.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 5",
-    "title": "Lanna Suit · 05",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 4",
+    "title": "Lanna Suit · 04",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -68,8 +41,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-06",
     "src": "/images/gallery/prewed-lanna-06.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 6",
-    "title": "Lanna Suit · 06",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 5",
+    "title": "Lanna Suit · 05",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -77,8 +50,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-07",
     "src": "/images/gallery/prewed-lanna-07.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 7",
-    "title": "Lanna Suit · 07",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 6",
+    "title": "Lanna Suit · 06",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -86,8 +59,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-08",
     "src": "/images/gallery/prewed-lanna-08.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 8",
-    "title": "Lanna Suit · 08",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 7",
+    "title": "Lanna Suit · 07",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -95,6 +68,15 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-09",
     "src": "/images/gallery/prewed-lanna-09.webp",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 8",
+    "title": "Lanna Suit · 08",
+    "collection": "Lanna Suit",
+    "width": 1200,
+    "height": 1800
+  },
+  {
+    "id": "lanna-10",
+    "src": "/images/gallery/prewed-lanna-10.webp",
     "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 9",
     "title": "Lanna Suit · 09",
     "collection": "Lanna Suit",
@@ -104,8 +86,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-11",
     "src": "/images/gallery/prewed-lanna-11.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 11",
-    "title": "Lanna Suit · 11",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 10",
+    "title": "Lanna Suit · 10",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -113,8 +95,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-13",
     "src": "/images/gallery/prewed-lanna-13.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 13",
-    "title": "Lanna Suit · 13",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 11",
+    "title": "Lanna Suit · 11",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -122,8 +104,17 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-14",
     "src": "/images/gallery/prewed-lanna-14.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 14",
-    "title": "Lanna Suit · 14",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 12",
+    "title": "Lanna Suit · 12",
+    "collection": "Lanna Suit",
+    "width": 1200,
+    "height": 1800
+  },
+  {
+    "id": "lanna-15",
+    "src": "/images/gallery/prewed-lanna-15.webp",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 13",
+    "title": "Lanna Suit · 13",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -131,8 +122,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-16",
     "src": "/images/gallery/prewed-lanna-16.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 16",
-    "title": "Lanna Suit · 16",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 14",
+    "title": "Lanna Suit · 14",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -140,8 +131,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-17",
     "src": "/images/gallery/prewed-lanna-17.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 17",
-    "title": "Lanna Suit · 17",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 15",
+    "title": "Lanna Suit · 15",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -149,8 +140,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-19",
     "src": "/images/gallery/prewed-lanna-19.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 19",
-    "title": "Lanna Suit · 19",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 16",
+    "title": "Lanna Suit · 16",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -158,8 +149,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-20",
     "src": "/images/gallery/prewed-lanna-20.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 20",
-    "title": "Lanna Suit · 20",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 17",
+    "title": "Lanna Suit · 17",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -167,8 +158,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-21",
     "src": "/images/gallery/prewed-lanna-21.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 21",
-    "title": "Lanna Suit · 21",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 18",
+    "title": "Lanna Suit · 18",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -176,8 +167,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-22",
     "src": "/images/gallery/prewed-lanna-22.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 22",
-    "title": "Lanna Suit · 22",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 19",
+    "title": "Lanna Suit · 19",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -185,8 +176,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-23",
     "src": "/images/gallery/prewed-lanna-23.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 23",
-    "title": "Lanna Suit · 23",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 20",
+    "title": "Lanna Suit · 20",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -194,8 +185,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-24",
     "src": "/images/gallery/prewed-lanna-24.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 24",
-    "title": "Lanna Suit · 24",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 21",
+    "title": "Lanna Suit · 21",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -203,8 +194,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-25",
     "src": "/images/gallery/prewed-lanna-25.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 25",
-    "title": "Lanna Suit · 25",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 22",
+    "title": "Lanna Suit · 22",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -212,8 +203,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-26",
     "src": "/images/gallery/prewed-lanna-26.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 26",
-    "title": "Lanna Suit · 26",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 23",
+    "title": "Lanna Suit · 23",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -221,8 +212,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-27",
     "src": "/images/gallery/prewed-lanna-27.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 27",
-    "title": "Lanna Suit · 27",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 24",
+    "title": "Lanna Suit · 24",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -230,8 +221,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-28",
     "src": "/images/gallery/prewed-lanna-28.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 28",
-    "title": "Lanna Suit · 28",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 25",
+    "title": "Lanna Suit · 25",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -239,8 +230,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-29",
     "src": "/images/gallery/prewed-lanna-29.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 29",
-    "title": "Lanna Suit · 29",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 26",
+    "title": "Lanna Suit · 26",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -248,8 +239,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-30",
     "src": "/images/gallery/prewed-lanna-30.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 30",
-    "title": "Lanna Suit · 30",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 27",
+    "title": "Lanna Suit · 27",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -257,8 +248,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-31",
     "src": "/images/gallery/prewed-lanna-31.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 31",
-    "title": "Lanna Suit · 31",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 28",
+    "title": "Lanna Suit · 28",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -266,8 +257,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-32",
     "src": "/images/gallery/prewed-lanna-32.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 32",
-    "title": "Lanna Suit · 32",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 29",
+    "title": "Lanna Suit · 29",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -275,8 +266,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-33",
     "src": "/images/gallery/prewed-lanna-33.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 33",
-    "title": "Lanna Suit · 33",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 30",
+    "title": "Lanna Suit · 30",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -284,8 +275,8 @@ export const galleryPhotos: GalleryPhoto[] = [
   {
     "id": "lanna-34",
     "src": "/images/gallery/prewed-lanna-34.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 34",
-    "title": "Lanna Suit · 34",
+    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 31",
+    "title": "Lanna Suit · 31",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800
@@ -475,6 +466,15 @@ export const galleryPhotos: GalleryPhoto[] = [
     "src": "/images/gallery/prewed-white-21.webp",
     "alt": "เบนซ์และโปร — Wedding Suit ภาพที่ 21",
     "title": "Wedding Suit · 21",
+    "collection": "Wedding Suit",
+    "width": 1200,
+    "height": 1800
+  },
+  {
+    "id": "white-22",
+    "src": "/images/gallery/prewed-white-22.webp",
+    "alt": "เบนซ์และโปร — Wedding Suit ภาพที่ 22",
+    "title": "Wedding Suit · 22",
     "collection": "Wedding Suit",
     "width": 1200,
     "height": 1800
