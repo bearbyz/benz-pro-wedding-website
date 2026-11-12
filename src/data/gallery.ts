@@ -48,15 +48,6 @@ export const galleryPhotos: GalleryPhoto[] = [
     "height": 1800
   },
   {
-    "id": "lanna-03",
-    "src": "/images/gallery/prewed-lanna-03.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 3",
-    "title": "Lanna Suit · 03",
-    "collection": "Lanna Suit",
-    "width": 1200,
-    "height": 1800
-  },
-  {
     "id": "lanna-04",
     "src": "/images/gallery/prewed-lanna-04.webp",
     "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 4",
@@ -120,15 +111,6 @@ export const galleryPhotos: GalleryPhoto[] = [
     "height": 1800
   },
   {
-    "id": "lanna-12",
-    "src": "/images/gallery/prewed-lanna-12.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 12",
-    "title": "Lanna Suit · 12",
-    "collection": "Lanna Suit",
-    "width": 1200,
-    "height": 1800
-  },
-  {
     "id": "lanna-13",
     "src": "/images/gallery/prewed-lanna-13.webp",
     "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 13",
@@ -160,15 +142,6 @@ export const galleryPhotos: GalleryPhoto[] = [
     "src": "/images/gallery/prewed-lanna-17.webp",
     "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 17",
     "title": "Lanna Suit · 17",
-    "collection": "Lanna Suit",
-    "width": 1200,
-    "height": 1800
-  },
-  {
-    "id": "lanna-18",
-    "src": "/images/gallery/prewed-lanna-18.webp",
-    "alt": "เบนซ์และโปร — Lanna Suit ภาพที่ 18",
-    "title": "Lanna Suit · 18",
     "collection": "Lanna Suit",
     "width": 1200,
     "height": 1800

@@ -81,7 +81,7 @@ media: {
 ## หน้าชุดการ์ดและแกลเลอรี
 
 - `/` เปิดซอง → `/suite` ชุดการ์ดบนโต๊ะ → `/invitation` รายละเอียดงาน
-- `/gallery` แกลเลอรี 63 ภาพ มีตัวกรอง เปิดภาพเต็ม ปุ่มก่อนหน้า/ถัดไป ปัดซ้ายขวา และปุ่มลูกศร/Escape
+- `/gallery` แกลเลอรี 60 ภาพ มีตัวกรอง เปิดภาพเต็ม ปุ่มก่อนหน้า/ถัดไป ปัดซ้ายขวา และปุ่มลูกศร/Escape
 - หมวด “ชุดขาว & สูท” เพิ่ม 8 ภาพ: บรรยากาศสวน อบจ.เชียงใหม่ 4 ภาพ และสตูดิโอ 4 ภาพ ดู Prompt และเรฟที่ `docs/white-prewedding-generation.md`
 - เปลี่ยนภาพและคำบรรยายร่วมทุกหน้าที่ `src/data/gallery.ts`
 - ภาพ WebP อยู่ที่ `public/images/gallery/benz-pro-*.webp`; PNG ต้นฉบับอยู่ที่ `docs/source-assets/gallery/`
@@ -106,4 +106,4 @@ Remove-Item Env:NEXT_PUBLIC_BASE_PATH
 
 ## ภาพพรีเวดดิ้งปัจจุบัน (12 พฤศจิกายน 2026)
 
-ใช้ภาพจาก BP_PreWed: ชุดเมือง 34 ภาพ และชุดสูท 29 ภาพ แทนภาพ AI เดิมทุกจุด ไฟล์สำหรับเว็บอยู่ที่ public/images/gallery/prewed-*.webp และตารางเทียบชื่อไฟล์อยู่ที่ docs/prewed-photo-sources.json ภาพ WebP เก่าเก็บสำรองที่ docs/source-assets/retired-gallery-webp
+ใช้ภาพจาก BP_PreWed: ชุดเมือง 31 ภาพ และชุดสูท 29 ภาพ แทนภาพ AI เดิมทุกจุด ไฟล์สำหรับเว็บอยู่ที่ public/images/gallery/prewed-*.webp และตารางเทียบชื่อไฟล์อยู่ที่ docs/prewed-photo-sources.json ภาพ WebP เก่าเก็บสำรองที่ docs/source-assets/retired-gallery-webp
