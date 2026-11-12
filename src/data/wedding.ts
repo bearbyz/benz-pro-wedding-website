@@ -22,8 +22,8 @@ export const wedding = {
   mapsUrl: "https://maps.app.goo.gl/36pKmcde9dYpLxaU7",
   media: {
     type: "image",
-    src: "/images/gallery/benz-pro-portrait.webp",
-    alt: "ภาพพรีเวดดิ้งเบนซ์และโปรในชุดล้านนา สร้างจากภาพอ้างอิงของคู่บ่าวสาว",
+    src: "/images/gallery/prewed-lanna-10.webp",
+    alt: "ภาพพรีเวดดิ้งเบนซ์และโปรในชุดเมือง",
   } as WeddingMedia,
   music: {
     // Add the downloaded/licensed file to public/audio, then set its URL here.

@@ -7,7 +7,7 @@ import { galleryPhotos, type GalleryPhoto } from "@/data/gallery";
 import { Botanical, Flourish, Icon } from "./ornaments";
 import { ScrollProgress } from "./motion-details";
 
-const filters = ["ทั้งหมด", "ล้านนา", "โรแมนติก", "คลาสสิก", "ชุดขาว & สูท"] as const;
+const filters = ["ทั้งหมด", "ชุดเมือง", "ชุดสูท"] as const;
 
 export default function WeddingGallery() {
   const [filter,setFilter] = useState<string>("ทั้งหมด");
@@ -55,7 +55,7 @@ export default function WeddingGallery() {
     <nav className="gallery-nav" aria-label="เมนูแกลเลอรี"><Link href="/suite" className="brand" aria-label="กลับไปหน้าชุดการ์ด">B<span>&</span>P</Link><Link href="/invitation" className="gallery-back"><Icon name="arrow"/> กลับไปหน้ารายละเอียด</Link><span className="eyebrow">OUR VISUAL LOVE LETTER</span></nav>
     <header className="gallery-heading"><Botanical className="gallery-heading-botanical"/><span className="section-index">THE ART OF BEING TOGETHER</span><h1>ทุกภาพ…มีเรา</h1><p>บางช่วงเวลา ไม่ต้องการคำบรรยายมากไปกว่าความรัก</p><Flourish/><span className="gallery-placeholder-note">ภาพพรีเวดดิ้งของเราสองคน</span></header>
     <div className="gallery-filter-bar"><div className="gallery-filters" role="group" aria-label="เลือกหมวดภาพ">{filters.map(item=><button key={item} onClick={()=>setFilter(item)} className={filter === item ? "selected" : ""} aria-pressed={filter === item}>{item}</button>)}</div><span aria-live="polite">{String(visible.length).padStart(2,"0")} ภาพแห่งความทรงจำ</span></div>
-    <div className="gallery-grid" key={filter}>{visible.map((item,index)=><button id={`photo-${item.id}`} key={item.id} className={`gallery-tile ${item.width>item.height ? "landscape" : "portrait"}`} style={{animationDelay:`${index*75}ms`}} onClick={()=>show(item)} aria-label={`เปิดภาพ ${item.title}`}><div className="gallery-tile-image"><Image src={item.src} alt={item.alt} width={item.width} height={item.height} sizes="(max-width: 700px) 46vw, (max-width: 1000px) 44vw, 30vw" priority={index<2}/><span className="gallery-image-open" aria-hidden="true">ดูภาพเต็ม <span>↗</span></span></div><div className="gallery-tile-caption"><span>{item.title}</span><small>{item.collection}</small></div></button>)}</div>
+    <div className="gallery-grid" key={filter}>{visible.map((item,index)=><button id={`photo-${item.id}`} key={item.id} className={`gallery-tile ${item.width>item.height ? "landscape" : "portrait"}`} style={{animationDelay:`${Math.min(index, 8)*75}ms`}} onClick={()=>show(item)} aria-label={`เปิดภาพ ${item.title}`}><div className="gallery-tile-image"><Image src={item.src} alt={item.alt} width={item.width} height={item.height} sizes="(max-width: 700px) 46vw, (max-width: 1000px) 44vw, 30vw" priority={index<2}/><span className="gallery-image-open" aria-hidden="true">ดูภาพเต็ม <span>↗</span></span></div><div className="gallery-tile-caption"><span>{item.title}</span><small>{item.collection}</small></div></button>)}</div>
     <footer className="gallery-page-footer"><Flourish/><h2>และยังมีอีกหลายความทรงจำ<br/>ที่เราอยากสร้างไปด้วยกัน</h2><Link href="/invitation" className="outline-button">กลับไปอ่านคำเชิญ <Icon name="arrow"/></Link><span>WITH LOVE, BENZ & PRO</span></footer>
 
     <dialog ref={dialog} className="photo-lightbox" aria-label="ภาพพรีเวดดิ้งขนาดเต็ม" onCancel={event=>{event.preventDefault();close();}} onClick={event=>{if(event.target===event.currentTarget)close();}} onKeyDown={event=>{if(event.key==="ArrowRight"){event.preventDefault();step(1);}if(event.key==="ArrowLeft"){event.preventDefault();step(-1);}}}>
