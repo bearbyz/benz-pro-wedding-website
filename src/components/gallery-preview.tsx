@@ -3,7 +3,7 @@ import Link from "next/link";
 import { galleryPhotos } from "@/data/gallery";
 import { Flourish, Icon } from "./ornaments";
 
-const previewPhotos = ["lanna-13", "white-17", "lanna-23"].map(id => galleryPhotos.find(photo => photo.id === id)!);
+const previewPhotos = ["lanna-13", "white-04", "lanna-23"].map(id => galleryPhotos.find(photo => photo.id === id)!);
 
 export default function GalleryPreview() {
   return <section className="gallery-preview reveal" id="gallery">
