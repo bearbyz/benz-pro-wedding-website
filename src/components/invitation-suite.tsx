@@ -10,8 +10,8 @@ import { TiltCard, useScrollReveal, ScrollProgress } from "./motion-details";
 
 export default function InvitationSuite() {
   const root = useScrollReveal();
-  const framedPhoto = galleryPhotos.find(photo => photo.id === "lanna-10")!;
-  const polaroidPhoto = galleryPhotos.find(photo => photo.id === "white-22")!;
+  const framedPhoto = galleryPhotos.find(photo => photo.id === "lanna-14")!;
+  const polaroidPhoto = galleryPhotos.find(photo => photo.id === "white-29")!;
   return <main ref={root} className="suite-page">
     <ScrollProgress/>
     <nav className="suite-nav" aria-label="เมนูชุดการ์ดเชิญ"><Link className="brand" href="/" aria-label="กลับไปที่ซองจดหมาย">B<span>&</span>P</Link><span className="eyebrow">A LITTLE WORLD OF OUR LOVE</span><Link href="/invitation" className="suite-nav-next">อ่านคำเชิญ <Icon name="arrow"/></Link></nav>
@@ -31,7 +31,7 @@ export default function InvitationSuite() {
 
       <div className="suite-details" data-reveal><TiltCard><Link href="/invitation" className="lace-keepsake"><span className="keepsake-edge" aria-hidden="true"/><span className="keepsake-content"><span className="eyebrow">YOU ARE INVITED</span><strong>คำเชิญ<br/>จากใจ</strong><Flourish/><span className="keepsake-cta">รายละเอียดวันงาน <Icon name="arrow"/></span></span></Link></TiltCard></div>
 
-      <div className="suite-polaroid" data-reveal><TiltCard><Link href={`/gallery#${polaroidPhoto.id}`} className="polaroid-card"><div className="polaroid-image"><Image src={polaroidPhoto.src} alt={polaroidPhoto.alt} width={polaroidPhoto.width} height={polaroidPhoto.height} sizes="(max-width: 700px) 45vw, 280px"/></div><span>เรื่องราวของเรา</span><small>OUR LITTLE FOREVER <Icon name="arrow"/></small></Link></TiltCard></div>
+      <div className="suite-polaroid" data-reveal><TiltCard><Link href={`/gallery#${polaroidPhoto.id}`} className="polaroid-card"><div className="polaroid-image"><Image style={{ objectPosition: "50% 100%" }} src={polaroidPhoto.src} alt={polaroidPhoto.alt} width={polaroidPhoto.width} height={polaroidPhoto.height} sizes="(max-width: 700px) 45vw, 280px"/></div><span>เรื่องราวของเรา</span><small>OUR LITTLE FOREVER <Icon name="arrow"/></small></Link></TiltCard></div>
 
       <div className="suite-final-invite" data-reveal><TiltCard><Link href="/invitation" className="burgundy-invite"><span className="burgundy-invite-lace" aria-hidden="true"/><span className="eyebrow">THE CELEBRATION</span><strong>วันของเรา<br/>อยากให้มีคุณ</strong><span>เปิดอ่านรายละเอียด <Icon name="arrow"/></span><Botanical className="invite-gold-botanical"/></Link></TiltCard></div>
       <span className="suite-petal petal-one" aria-hidden="true"/><span className="suite-petal petal-two" aria-hidden="true"/><span className="suite-petal petal-three" aria-hidden="true"/>
